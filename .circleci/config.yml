@@ -2,7 +2,8 @@ version: 2
 jobs:
   build:
   working_directory: ~/tmp
-  docker: circleci/node:10
+  docker: 
+    - image: circleci/node:10
   steps:
     - checkout:
     - run: npm install
